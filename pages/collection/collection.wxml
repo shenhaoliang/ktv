@@ -1,0 +1,29 @@
+<!--pages/collection/collection.wxml-->
+<view class="news-item-container">
+<view  wx:if="{{hidden}}">
+  <view class='edit'>
+    <label class='edit_btn' bindtap='btn_edit'>{{edit_name}}</label>
+  </view>
+  <block wx:for="{{dea}}" wx:key="{{index}}">
+    <!-- <text wx:if="{{item.header}}" class="sub-title">{{item.header}}</text> -->
+    <navigator>
+      <view class="news-item">
+        <view class="news-item-right">
+          <image src="{{item.iurl}}" class="news-image" />
+        </view>
+        <view class="news-item-left">
+          <text class="news-item-title">{{item.title}}</text>
+          <text class="news-item-price">￥{{item.price}}</text>
+          <text class="news-item-sho">房型 {{item.house}}</text>
+        </view>
+        <!-- <button class="weui-btn mini-btn" type="warn" size="mini">立即购买</button> -->
+        <image class='dele_edit' bindtap='deletes' data-index='{{index}}' src='../../image/tab/trash.png' data-type-id="{{item.objectId}}" style='display:{{edit_show}}'></image>
+      </view>
+    </navigator>
+  </block>
+  </view>
+  <view wx:else>
+    <view class="list_none">暂时还没有收藏哦~</view>
+  </view>
+ 
+</view>

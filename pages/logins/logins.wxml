@@ -1,0 +1,42 @@
+<view class="page__bd">
+  <view style="height: {{windowHeight}}px; width: {{windowWidth}}px;" class="back_img">
+  </view>
+  <view style="position:absolute;top:{{windowHeight * 0.08}}px;">
+    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548505464258&di=2c5ab9aef195ea75246cb27349b4bac2&imgtype=0&src=http%3A%2F%2Fpic83.nipic.com%2Ffile%2F20151120%2F654913_170348145081_2.jpg" style="width: {{windowWidth * 0.32}}px;height:{{windowWidth * 0.3}}px; margin-left:{{windowWidth * 0.5 - 60}}px;border-radius:{{windowWidth * 0.2}}px;"></image>
+  </view>
+
+  <form bindsubmit="formSubmit" class='form'>
+    <view class="login_info">
+      <view class="weui-cells weui-cells_after-title login_form">
+
+        <view class="weui-cell_input">
+          <image class="nameImage" src="../../image/name.png"></image>
+          <view class="weui-cell__bd1">
+            <input class="weui-input" name="username" bindinput='usernameInput' value='{{no}}' placeholder="请输入用户名" placeholder-class='fontcss'/>
+            <view class='wo'></view>
+          </view>
+        </view>
+
+        <view class="weui-cell_input">
+          <image class="nameImage" src="../../image/key.png"></image>
+          <view class="weui-cell__bd1">
+            <input class="weui-input" type="password" name="password" bindinput='passwordInput' placeholder="请输入密码" placeholder-class='fontcss'/>
+            <view class='wo'></view>
+          </view>
+        </view>
+        <!--按钮-->
+        <view class="weui-btn-area">
+          <button class="loginBtn" type="primary" bindtap='login' disabled='{{disabled}}'>登录</button>
+        </view>
+        <view class='weui-cell_input'>
+          <view class='qing'>
+            <navigator url='/pages/register/register'>注册</navigator>
+          </view>
+          <view class='ping'>
+            <navigator>忘记密码</navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </form>
+</view>

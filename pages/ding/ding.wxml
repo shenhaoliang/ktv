@@ -1,0 +1,18 @@
+<view class="news-item-container">
+  <block wx:for="{{dea}}" wx:key="{{index}}">
+      <view class="news-item">
+        <view class="news-item-left">
+          <text class="news-item-name">预定人姓名: {{item.username}}</text>
+          <text class="news-item-title">预定房型:  {{item.dinghouse}}</text>
+          <text class="news-item-price">预定几点:  {{item.time}}</text>
+          <text class="news-item-sho">预定时间:    {{item.date}}</text>
+           <text class="news-item-sho">手机号:    {{phone}}</text>
+        </view>
+         <image class='dele_edit' bindtap='deletes' data-index='{{index}}' src='../../image/tab/trash.png' data-type-id="{{item.objectId}}" style='display:{{edit_show}}'></image>
+      </view>
+
+  </block>
+ <view>
+    <view class="list_none"  hidden='{{hidden}}'>暂时还没有订单哦~</view>
+  </view>
+</view>

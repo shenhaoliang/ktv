@@ -1,0 +1,31 @@
+<!--index.wxml-->
+
+<view class="container">
+    <!--上头像加昵称-->
+    <view class="avatar">
+        <view  bindtap="bindViewTap" class="userinfo">
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+          <button bindgetuserinfo="gotologin" type="ghost" shape="circle" size="mini" open-type="getUserInfo" hidden='{{hidden}}'>用户信息</button>
+        </view>
+    </view>
+    <!--列表栏-->
+    <view class="list">
+        <navigator url="../../pages/ding/ding">
+            <text class="iconfont icon_li icon-dingdandaifukuan"></text>
+            <text class="menu">我的订单</text>
+        </navigator>
+        <navigator >
+            <text class="iconfont icon_li icon-weifukuan"></text>
+            <text class="menu">支付记录</text>
+        </navigator>
+        <navigator url="../collection/collection?id=2">
+            <text class="iconfont icon_li icon-daishouhuo"></text>
+            <text class="menu">我的收藏</text>
+        </navigator>
+        <!-- <navigator url="url" bindtap="address">
+            <text class="iconfont icon_li icon-dizhi"></text>
+            <text class="menu"></text>
+        </navigator> -->
+    </view>
+</view>

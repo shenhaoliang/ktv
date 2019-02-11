@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view wx:if='{{interfaces}}'>
+  <!--上图片加搜索-->
+  <view class="">
+    <!--背景图片-->
+    <swiper class="top" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="false">
+      <block wx:for="{{BoList}}">
+        <swiper-item>
+          <navigator url="{{item.slide_url}}" hover-class="navigator-hover">
+            <image src="{{item.imgurl}}" class="slide-image" mode='aspectFill' style="width:100%;height:400px" />
+          </navigator>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="center">
+    <view class="date">营业时间 14:00-23:00</view>
+    <view class="phone">订房电话 0355-3330355</view>
+  </view>
+  <view class="show">---------环境展示---------</view>
+  <view class='class_view_panel'>
+    <block wx:for="{{imgurlList}}"  wx:key="item">
+      <navigator class="class_nav">
+        <view class="nes">
+          <image src='{{item.imgurl}}' data-index="{{index}}"  bindtap="previewImage"></image>
+          <!-- <text class="tx">{{item.text}}</text> -->
+        </view>
+      </navigator>
+    </block>
+  </view>
+  <view class="news-item-container">
+    <block wx:for="{{dea}}" wx:for-index="id">
+     <!-- <text wx:if="{{item.header}}" class="sub-title">{{item.header}}</text> -->
+      <navigator  url="../deatil/deatil?id={{item.objectId}}">
+        <view class="news-item">
+          <view class="news-item-right">
+            <image src="{{item.url}}" class="news-image" />
+          </view>
+          <view class="news-item-left">
+            <text class="news-item-title">{{item.title}}</text>
+            <text class="news-item-price">￥{{item.price}}</text>
+            <text class="news-item-sho">已售 {{item.sho}}</text>
+          </view>
+        <button class="weui-btn mini-btn" type="warn" size="mini">立即购买</button>
+        </view>
+      </navigator>
+    </block>
+    <!-- <button type="primary" class="load-btn" size="mini" loading="{{loading}}" plain="{{plain}}" bindtap="loadMore"> 更多 </button> -->
+  </view>
+</view>

@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logins/logins",
+    "pages/collection/collection",
+    "pages/register/register",
+    "pages/phone/phone",
+    "pages/deatil/deatil",
+    "pages/logs/logs",
+    "pages/map/map",
+    "pages/user/user",
+    "pages/car/car",
+    "pages/ding/ding"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EE82EE",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#EE82EE",
+    "selectedColor": "#f00",
+    "borderStyle": "white",
+    "backgroundColor": "#e8e8e8",
+    "list": [
+      {
+        "iconPath": "image/tab/home.png",
+        "selectedIconPath": "image/tab/home.png",
+        "text": "首页",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "iconPath": "image/tab/phone.png",
+        "selectedIconPath": "image/tab/phone.png",
+        "text": "预定",
+        "pagePath": "pages/phone/phone"
+      },
+      {
+        "iconPath": "image/tab/compass.png",
+        "selectedIconPath": "image/tab/compass.png",
+        "text": "位置",
+        "pagePath": "pages/map/map"
+      },
+      {
+        "iconPath": "image/tab/user.png",
+        "selectedIconPath": "image/tab/user.png",
+        "text": "我的",
+        "pagePath": "pages/user/user"
+      }
+    ]
+  }
+}

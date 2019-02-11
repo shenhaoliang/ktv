@@ -1,0 +1,76 @@
+/* index.wxss */
+.avatar{
+  width:100%;
+  height:280rpx;
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548036136&di=57e62612a47b739cb31d18995d408205&imgtype=jpg&er=1&src=http%3A%2F%2Fimages.vectorhq.com%2Fimages%2Fpreviews%2F800%2Fabstract-colorful-dark-background-vector-graphic-73191.jpg');
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:280rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  margin-top:37px;
+}
+
+.userinfo-nickname {
+  color: #FFF;
+}
+.usermotto {
+  margin-top: 200px;
+}
+
+/*订单*/
+.list{
+  width:100%;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  font-size:28rpx;
+
+}
+.list navigator{
+  height:50px;
+  line-height:50px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding: 0 15px; background: #fff; position: relative;
+}
+.list navigator:after{
+  content:""; 
+  display: block; 
+  width: 5px; 
+  height: 5px; 
+  border: 1px solid; 
+  border-color:#ccc #ccc transparent transparent; 
+  position: absolute;
+  top: 50%; 
+  right:25px;
+  -webkit-transform: rotate(45deg) translateY(-6px);
+  transform: rotate(45deg) translateY(-6px);
+}
+
+
+.icon_li{ 
+  width:94rpx;
+  height:94rpx;
+  text-align:center;
+  vertical-align:bottom;
+  font-size:38rpx;
+  border-radius:50%;
+  margin-bottom:15rpx;
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+  align-items:center;
+  color:#666;
+}
+
+.menu{
+  margin-left: 20rpx;
+}

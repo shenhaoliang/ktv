@@ -1,0 +1,75 @@
+.back_img{
+  background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1548505650618&di=d42a824c7df3ab1527ccd1d309127043&imgtype=0&src=http%3A%2F%2Faliimg.changba.com%2Fcache%2Fphoto%2F396991944_640_640.jpg") no-repeat;
+  background-size:cover;
+  -webkit-filter: blur(10px); /* Chrome, Opera */
+  -moz-filter: blur(10px);
+  -ms-filter: blur(10px);    
+  filter: blur(10px); 
+  z-index:0;
+  position:relative;
+}
+.login_info{
+  font-family: 楷体;
+  z-index: 999;
+  position:absolute;
+  top: 35%;
+  width: 92%;
+}
+.login_form{
+  border-radius:5px;
+  margin-left:8%;
+  /* background-color: rgba(255,255,255,0.2); */
+}
+.weui-cell_input{
+  display:flex;
+  flex-direction:row;
+  margin-top: 5%;
+}
+.weui-cell__bd1{
+  margin-left: 75rpx;
+}
+.weui-btn-area{
+  margin-top: 80rpx;
+}
+.weui-btn{
+   width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 35px;
+  /* color: #fff; */
+  border-radius: 20rpx;
+  position:relative;
+  /* left:-35rpx; */
+}
+
+.fontcss {
+  font-family: 楷体;
+}
+
+.weui-input{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top:20rpx;
+  left:50rpx
+}
+
+.nameImage{
+  height: 50rpx;
+  position: relative;
+  left:30rpx;
+  top:20rpx;
+}
+
+.nameImage, .keyImage {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 40rpx;
+  height: 40rpx
+}
+
+
+.wo{
+  border-bottom:1px rgb(110, 149, 221) solid;
+  margin-top: 20rpx;
+}
